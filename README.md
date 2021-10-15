@@ -68,16 +68,12 @@ Use this bibtex to cite this repository:
 ## Requirements
 Python 3.6, TensorFlow 2.0, and other common packages listed in `requirements.txt`.
 
-### MS COCO Requirements:
-To train or test on MS COCO, you'll also need:
+### Data Requirements:
+To train or test on Underwater Data, you'll also need:
 * pycocotools (installation instructions below)
-* [MS COCO Dataset](http://cocodataset.org/#home)
-* Download the 5K [minival](https://dl.dropboxusercontent.com/s/o43o90bna78omob/instances_minival2014.json.zip?dl=0)
-  and the 35K [validation-minus-minival](https://dl.dropboxusercontent.com/s/s3tw5zcg7395368/instances_valminusminival2014.json.zip?dl=0)
-  subsets. More details in the original [Faster R-CNN implementation](https://github.com/rbgirshick/py-faster-rcnn/blob/master/data/README.md).
+* [Under water Dataset](https://drive.google.com/drive/folders/1P7Ktx1XqjOQPvMtpzeduoKxwq9Vo-y4Z?usp=sharing)
+* We will use instance version of Dataset
 
-If you use Docker, the code has been verified to work on
-[this Docker container](https://hub.docker.com/r/waleedka/modern-deep-learning/).
 
 
 ## Installation
@@ -96,3 +92,11 @@ If you use Docker, the code has been verified to work on
     * Linux: https://github.com/waleedka/coco
     * Windows: https://github.com/philferriere/cocoapi.
     You must have the Visual C++ 2015 build tools on your path (see the repo for additional details)
+
+
+## Running
+1. Download the [Trained Weights](https://drive.google.com/drive/folders/1daAVSWpGzcPKDrfmGsEud2Nwk6BkONbp?usp=sharing)
+2. Place them in logs folder.
+3. To run the video model run video_underwater.ipnyb in samples\under_sea
+4. To run the webcam detection run cam_detection.ipynb in samples\under_sea
+5. [Training Notebook](https://drive.google.com/file/d/1hIQe4WJWtzJf-6NNoVeK-CC4h-pQu9Mu/view?usp=sharing)
